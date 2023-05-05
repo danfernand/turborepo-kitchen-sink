@@ -11,9 +11,9 @@
   },
   "devDependencies": {
     "prettier": "^2.7.1",
-    "turbo": "latest"
+    "turbo": "1.9.4-canary.7"
   },
-  "packageManager": "yarn@1.22.18",
+  "packageManager": "yarn@3.5.1",
   "workspaces": [
     "apps/*",
     "packages/*"
