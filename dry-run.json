@@ -1,0 +1,838 @@
+{
+  "id": "2POFMAOCk14cGMA7qlNqyUmyAb5",
+  "version": "0",
+  "turboVersion": "1.9.4-canary.7",
+  "globalCacheInputs": {
+    "rootKey": "Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo",
+    "files": {},
+    "hashOfExternalDependencies": "2f64b74c06cabd05",
+    "rootPipeline": {
+      "build": {
+        "outputs": [
+          "!.next/cache/**",
+          ".next/**",
+          "api/**",
+          "build/**",
+          "dist/**",
+          "public/build/**"
+        ],
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "clean": {
+        "outputs": [],
+        "cache": false,
+        "dependsOn": [],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "dev": {
+        "outputs": [],
+        "cache": false,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": true
+      },
+      "lint": {
+        "outputs": [],
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "test": {
+        "outputs": [
+          "coverage/**"
+        ],
+        "cache": true,
+        "dependsOn": [],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      }
+    }
+  },
+  "packages": [
+    "//",
+    "admin",
+    "api",
+    "blog",
+    "eslint-config-custom",
+    "eslint-config-custom-server",
+    "jest-presets",
+    "logger",
+    "storefront",
+    "tsconfig",
+    "ui"
+  ],
+  "envMode": "infer",
+  "tasks": [
+    {
+      "taskId": "eslint-config-custom-server#build",
+      "task": "build",
+      "package": "eslint-config-custom-server",
+      "hash": "69045d57043f9642",
+      "inputs": {
+        "index.js": "93e8c74cfd9df1d6f7a2ca819d533b5550a9fded",
+        "package.json": "fd58c91eac78dacc4b5793484fdbdf19baae9c9e"
+      },
+      "hashOfExternalDependencies": "a297c7e1df9368f3",
+      "cache": {
+        "local": false,
+        "remote": false,
+        "status": "MISS",
+        "timeSaved": 0
+      },
+      "command": "\u003cNONEXISTENT\u003e",
+      "cliArguments": [],
+      "outputs": [
+        ".next/**",
+        "api/**",
+        "build/**",
+        "dist/**",
+        "public/build/**"
+      ],
+      "excludedOutputs": [
+        ".next/cache/**"
+      ],
+      "logFile": "packages/eslint-config-custom-server/.turbo/turbo-build.log",
+      "directory": "packages/eslint-config-custom-server",
+      "dependencies": [],
+      "dependents": [
+        "api#build"
+      ],
+      "resolvedTaskDefinition": {
+        "outputs": [
+          "!.next/cache/**",
+          ".next/**",
+          "api/**",
+          "build/**",
+          "dist/**",
+          "public/build/**"
+        ],
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "expandedOutputs": [],
+      "framework": "\u003cNO FRAMEWORK DETECTED\u003e",
+      "envMode": "loose",
+      "environmentVariables": {
+        "configured": [],
+        "inferred": [],
+        "global": [
+          "PORT=",
+          "VERCEL_ANALYTICS_ID="
+        ],
+        "passthrough": null,
+        "globalPassthrough": null
+      }
+    },
+    {
+      "taskId": "jest-presets#build",
+      "task": "build",
+      "package": "jest-presets",
+      "hash": "795bf49fbe7175af",
+      "inputs": {
+        "jest/node/jest-preset.js": "b6c259304707f61f8a3b04ee9a54a7f173ea8a3a",
+        "package.json": "c598b407c301bd976e287b174965417f8682c14f"
+      },
+      "hashOfExternalDependencies": "c3ab9fb73abde4e8",
+      "cache": {
+        "local": false,
+        "remote": false,
+        "status": "MISS",
+        "timeSaved": 0
+      },
+      "command": "\u003cNONEXISTENT\u003e",
+      "cliArguments": [],
+      "outputs": [
+        ".next/**",
+        "api/**",
+        "build/**",
+        "dist/**",
+        "public/build/**"
+      ],
+      "excludedOutputs": [
+        ".next/cache/**"
+      ],
+      "logFile": "packages/jest-presets/.turbo/turbo-build.log",
+      "directory": "packages/jest-presets",
+      "dependencies": [],
+      "dependents": [
+        "admin#build",
+        "api#build",
+        "blog#build",
+        "logger#build",
+        "storefront#build",
+        "ui#build"
+      ],
+      "resolvedTaskDefinition": {
+        "outputs": [
+          "!.next/cache/**",
+          ".next/**",
+          "api/**",
+          "build/**",
+          "dist/**",
+          "public/build/**"
+        ],
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "expandedOutputs": [],
+      "framework": "\u003cNO FRAMEWORK DETECTED\u003e",
+      "envMode": "loose",
+      "environmentVariables": {
+        "configured": [],
+        "inferred": [],
+        "global": [
+          "PORT=",
+          "VERCEL_ANALYTICS_ID="
+        ],
+        "passthrough": null,
+        "globalPassthrough": null
+      }
+    },
+    {
+      "taskId": "eslint-config-custom#build",
+      "task": "build",
+      "package": "eslint-config-custom",
+      "hash": "26ebb411cdcbf7a0",
+      "inputs": {
+        "index.js": "d44cb62ac1dd95916beaad16dfd75d4591f76f39",
+        "package.json": "cf23a786f3d911d957678a4f83be80e0c3407852"
+      },
+      "hashOfExternalDependencies": "23f53ab903195581",
+      "cache": {
+        "local": false,
+        "remote": false,
+        "status": "MISS",
+        "timeSaved": 0
+      },
+      "command": "\u003cNONEXISTENT\u003e",
+      "cliArguments": [],
+      "outputs": [
+        ".next/**",
+        "api/**",
+        "build/**",
+        "dist/**",
+        "public/build/**"
+      ],
+      "excludedOutputs": [
+        ".next/cache/**"
+      ],
+      "logFile": "packages/eslint-config-custom/.turbo/turbo-build.log",
+      "directory": "packages/eslint-config-custom",
+      "dependencies": [],
+      "dependents": [
+        "admin#build",
+        "api#build",
+        "blog#build",
+        "logger#build",
+        "storefront#build",
+        "ui#build"
+      ],
+      "resolvedTaskDefinition": {
+        "outputs": [
+          "!.next/cache/**",
+          ".next/**",
+          "api/**",
+          "build/**",
+          "dist/**",
+          "public/build/**"
+        ],
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "expandedOutputs": [],
+      "framework": "\u003cNO FRAMEWORK DETECTED\u003e",
+      "envMode": "loose",
+      "environmentVariables": {
+        "configured": [],
+        "inferred": [],
+        "global": [
+          "PORT=",
+          "VERCEL_ANALYTICS_ID="
+        ],
+        "passthrough": null,
+        "globalPassthrough": null
+      }
+    },
+    {
+      "taskId": "tsconfig#build",
+      "task": "build",
+      "package": "tsconfig",
+      "hash": "c9e9a658523059b3",
+      "inputs": {
+        "base.json": "d72a9f3a27835434aadbb1d173136c7384375630",
+        "nextjs.json": "6af13474e62b873f2f5e82b09f8451137d021606",
+        "package.json": "6efb83e14ce81b74221b0482c48e85a83e8e44e5",
+        "react-library.json": "af8711c5299db041495069319d436a7730e89bd1",
+        "vite.json": "46c2e55bd5fc4183b888962a338799587dc4af43"
+      },
+      "hashOfExternalDependencies": "ccab0b28617f1f56",
+      "cache": {
+        "local": false,
+        "remote": false,
+        "status": "MISS",
+        "timeSaved": 0
+      },
+      "command": "\u003cNONEXISTENT\u003e",
+      "cliArguments": [],
+      "outputs": [
+        ".next/**",
+        "api/**",
+        "build/**",
+        "dist/**",
+        "public/build/**"
+      ],
+      "excludedOutputs": [
+        ".next/cache/**"
+      ],
+      "logFile": "packages/tsconfig/.turbo/turbo-build.log",
+      "directory": "packages/tsconfig",
+      "dependencies": [],
+      "dependents": [
+        "admin#build",
+        "api#build",
+        "blog#build",
+        "logger#build",
+        "storefront#build",
+        "ui#build"
+      ],
+      "resolvedTaskDefinition": {
+        "outputs": [
+          "!.next/cache/**",
+          ".next/**",
+          "api/**",
+          "build/**",
+          "dist/**",
+          "public/build/**"
+        ],
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "expandedOutputs": [],
+      "framework": "\u003cNO FRAMEWORK DETECTED\u003e",
+      "envMode": "loose",
+      "environmentVariables": {
+        "configured": [],
+        "inferred": [],
+        "global": [
+          "PORT=",
+          "VERCEL_ANALYTICS_ID="
+        ],
+        "passthrough": null,
+        "globalPassthrough": null
+      }
+    },
+    {
+      "taskId": "ui#build",
+      "task": "build",
+      "package": "ui",
+      "hash": "5f19d625bf57da6f",
+      "inputs": {
+        ".eslintrc.js": "c8df607506ccb33469c4a1bd896f561aa590cd0d",
+        "package.json": "7c8b7b45f3f7eb9b2243f61703405b83516c4327",
+        "src/CounterButton.tsx": "3c997522def1f4e79b13a3397f5936f60122dd68",
+        "src/NewTabLink.tsx": "e8a00a0e5717b559786e4fe12340b3c264bd60e6",
+        "src/__tests__/index.test.tsx": "89562084b175239cb3981460ee3bb82d1ef62f29",
+        "src/__tests__/tsconfig.json": "10f19c15fbdf0d9190ee9449dc7ff9c9c9e36732",
+        "src/index.tsx": "4880f342fc2b62d94dbf708c0b51a281a1f98475",
+        "tsconfig.json": "46c4f7bb4221e67ad916ecf0d8abf464af9dc5e2"
+      },
+      "hashOfExternalDependencies": "4e1cbfa6e3ff8e7d",
+      "cache": {
+        "local": true,
+        "remote": true,
+        "status": "HIT",
+        "source": "LOCAL",
+        "timeSaved": 0
+      },
+      "command": "tsup src/index.tsx --format esm,cjs --dts --external react",
+      "cliArguments": [],
+      "outputs": [
+        ".next/**",
+        "api/**",
+        "build/**",
+        "dist/**",
+        "public/build/**"
+      ],
+      "excludedOutputs": [
+        ".next/cache/**"
+      ],
+      "logFile": "packages/ui/.turbo/turbo-build.log",
+      "directory": "packages/ui",
+      "dependencies": [
+        "eslint-config-custom#build",
+        "jest-presets#build",
+        "tsconfig#build"
+      ],
+      "dependents": [
+        "admin#build",
+        "blog#build",
+        "storefront#build"
+      ],
+      "resolvedTaskDefinition": {
+        "outputs": [
+          "!.next/cache/**",
+          ".next/**",
+          "api/**",
+          "build/**",
+          "dist/**",
+          "public/build/**"
+        ],
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "expandedOutputs": [],
+      "framework": "\u003cNO FRAMEWORK DETECTED\u003e",
+      "envMode": "loose",
+      "environmentVariables": {
+        "configured": [],
+        "inferred": [],
+        "global": [
+          "PORT=",
+          "VERCEL_ANALYTICS_ID="
+        ],
+        "passthrough": null,
+        "globalPassthrough": null
+      }
+    },
+    {
+      "taskId": "logger#build",
+      "task": "build",
+      "package": "logger",
+      "hash": "59f87d892168f703",
+      "inputs": {
+        ".eslintrc.js": "c8df607506ccb33469c4a1bd896f561aa590cd0d",
+        "package.json": "8d5765baa94de4b049f3c35b28c5893a2e54938f",
+        "src/__tests__/log.test.ts": "fa597a863b164d25af8973d6c1c5138f35346f8c",
+        "src/__tests__/tsconfig.json": "bf65be62f2d5cbf56a68c679966e38f946ce9cd2",
+        "src/index.ts": "e472eb34fe16cdf514700f2e92f7216af35412bb",
+        "tsconfig.json": "74f3de4613c1013774f1d638327b169d3a0e6cdd"
+      },
+      "hashOfExternalDependencies": "1803ad6bce0ac3b7",
+      "cache": {
+        "local": true,
+        "remote": true,
+        "status": "HIT",
+        "source": "LOCAL",
+        "timeSaved": 0
+      },
+      "command": "tsc",
+      "cliArguments": [],
+      "outputs": [
+        ".next/**",
+        "api/**",
+        "build/**",
+        "dist/**",
+        "public/build/**"
+      ],
+      "excludedOutputs": [
+        ".next/cache/**"
+      ],
+      "logFile": "packages/logger/.turbo/turbo-build.log",
+      "directory": "packages/logger",
+      "dependencies": [
+        "eslint-config-custom#build",
+        "jest-presets#build",
+        "tsconfig#build"
+      ],
+      "dependents": [
+        "api#build",
+        "storefront#build"
+      ],
+      "resolvedTaskDefinition": {
+        "outputs": [
+          "!.next/cache/**",
+          ".next/**",
+          "api/**",
+          "build/**",
+          "dist/**",
+          "public/build/**"
+        ],
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "expandedOutputs": [],
+      "framework": "\u003cNO FRAMEWORK DETECTED\u003e",
+      "envMode": "loose",
+      "environmentVariables": {
+        "configured": [],
+        "inferred": [],
+        "global": [
+          "PORT=",
+          "VERCEL_ANALYTICS_ID="
+        ],
+        "passthrough": null,
+        "globalPassthrough": null
+      }
+    },
+    {
+      "taskId": "blog#build",
+      "task": "build",
+      "package": "blog",
+      "hash": "5a38e763c2bc8501",
+      "inputs": {
+        ".gitignore": "42ec5e40f157d5ddb165775130885aedbe4633ec",
+        "README.md": "944936b34297647ddb51a2da2c57defb8baf3c3a",
+        "app/entry.client.tsx": "8338545d164ffffdb0e0b4e0e3d3d8ed86420a30",
+        "app/entry.server.tsx": "5112e091671ed7076c82ad7435e0b12850164f76",
+        "app/root.tsx": "23a08a8643893657daffce02dd8dfcb5c95f9c34",
+        "app/routes/index.tsx": "92dc0cdfe57a5abfe4a599772c695be0d558a7cd",
+        "app/styles.css": "d4b766eb34f8db6771f1b325a485d560fdba456c",
+        "package.json": "3c75a5c28408a20e69b3be206f0390bb9e5ef790",
+        "public/favicon.ico": "8830cf6821b354114848e6354889b8ecf6d2bc61",
+        "remix.config.js": "260b82c7cb11659c129e1396a71a5cd7e86371f5",
+        "remix.env.d.ts": "dcf8c45e1d4cf625a40d791e5ffadee37cfaad5b",
+        "server.js": "4e2a0e00e7cb04ec13c0b9aff0e304b1d38ed29f",
+        "tsconfig.json": "791822cd96132b2c5ef28b189edd64ad6bcd68ae"
+      },
+      "hashOfExternalDependencies": "149606cf8557a7c9",
+      "cache": {
+        "local": true,
+        "remote": true,
+        "status": "HIT",
+        "source": "LOCAL",
+        "timeSaved": 0
+      },
+      "command": "remix build",
+      "cliArguments": [],
+      "outputs": [
+        ".next/**",
+        "api/**",
+        "build/**",
+        "dist/**",
+        "public/build/**"
+      ],
+      "excludedOutputs": [
+        ".next/cache/**"
+      ],
+      "logFile": "apps/blog/.turbo/turbo-build.log",
+      "directory": "apps/blog",
+      "dependencies": [
+        "eslint-config-custom#build",
+        "jest-presets#build",
+        "tsconfig#build",
+        "ui#build"
+      ],
+      "dependents": [],
+      "resolvedTaskDefinition": {
+        "outputs": [
+          "!.next/cache/**",
+          ".next/**",
+          "api/**",
+          "build/**",
+          "dist/**",
+          "public/build/**"
+        ],
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "expandedOutputs": [],
+      "framework": "\u003cNO FRAMEWORK DETECTED\u003e",
+      "envMode": "loose",
+      "environmentVariables": {
+        "configured": [],
+        "inferred": [],
+        "global": [
+          "PORT=",
+          "VERCEL_ANALYTICS_ID="
+        ],
+        "passthrough": null,
+        "globalPassthrough": null
+      }
+    },
+    {
+      "taskId": "admin#build",
+      "task": "build",
+      "package": "admin",
+      "hash": "747c2e32c5e5c8b4",
+      "inputs": {
+        ".eslintrc.js": "c8df607506ccb33469c4a1bd896f561aa590cd0d",
+        "index.html": "c88938aaddb8133706b3581d74c6f031a1aa0da7",
+        "package.json": "3142d33ab7e40618b06a7aaffdbc988de738dfcf",
+        "public/favicon.ico": "3a3c34a2353ab2ce8839a840f162be03d1a9826d",
+        "src/App.css": "dc5bbf44e8427637ae617a673509106f869d6c4c",
+        "src/App.tsx": "ed283946a9fcc1d71c9b5a5c0cefdc417d08667e",
+        "src/index.css": "863ff0b4073fd2c632b86bfe177378ae2086241f",
+        "src/main.tsx": "794ecaf978a5aab512991b8e906c5cd6666930ce",
+        "tsconfig.json": "585415b6f9f9c86b79d28b982335c24b205a962f",
+        "vite.config.ts": "58676f788a8e5e81102769fc864d071857d12dd1"
+      },
+      "hashOfExternalDependencies": "b38cf715a577fc94",
+      "cache": {
+        "local": true,
+        "remote": true,
+        "status": "HIT",
+        "source": "LOCAL",
+        "timeSaved": 0
+      },
+      "command": "vite build",
+      "cliArguments": [],
+      "outputs": [
+        ".next/**",
+        "api/**",
+        "build/**",
+        "dist/**",
+        "public/build/**"
+      ],
+      "excludedOutputs": [
+        ".next/cache/**"
+      ],
+      "logFile": "apps/admin/.turbo/turbo-build.log",
+      "directory": "apps/admin",
+      "dependencies": [
+        "eslint-config-custom#build",
+        "jest-presets#build",
+        "tsconfig#build",
+        "ui#build"
+      ],
+      "dependents": [],
+      "resolvedTaskDefinition": {
+        "outputs": [
+          "!.next/cache/**",
+          ".next/**",
+          "api/**",
+          "build/**",
+          "dist/**",
+          "public/build/**"
+        ],
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "expandedOutputs": [],
+      "framework": "vite",
+      "envMode": "loose",
+      "environmentVariables": {
+        "configured": [],
+        "inferred": [],
+        "global": [
+          "PORT=",
+          "VERCEL_ANALYTICS_ID="
+        ],
+        "passthrough": null,
+        "globalPassthrough": null
+      }
+    },
+    {
+      "taskId": "api#build",
+      "task": "build",
+      "package": "api",
+      "hash": "948206e211236c86",
+      "inputs": {
+        ".eslintrc.js": "2308ff96843b03da7b27256d6d4a6fa86440b431",
+        "package.json": "8df4c61e65f641dcaa3038d7ca2beacb8e483aa0",
+        "src/__tests__/server.test.ts": "c0c9806f8a9d7cd9577baef008494db82b1f73bb",
+        "src/__tests__/tsconfig.json": "bf65be62f2d5cbf56a68c679966e38f946ce9cd2",
+        "src/index.ts": "5f48625568c7679d76fe66c869bfd6ca046c15e6",
+        "src/server.ts": "70ccf0b76b72c7821c3a31fc0e53d10ac7a026df",
+        "tsconfig.json": "74f3de4613c1013774f1d638327b169d3a0e6cdd"
+      },
+      "hashOfExternalDependencies": "b1a4e09b4aaeba2b",
+      "cache": {
+        "local": true,
+        "remote": true,
+        "status": "HIT",
+        "source": "LOCAL",
+        "timeSaved": 0
+      },
+      "command": "tsup src/index.ts --format cjs",
+      "cliArguments": [],
+      "outputs": [
+        ".next/**",
+        "api/**",
+        "build/**",
+        "dist/**",
+        "public/build/**"
+      ],
+      "excludedOutputs": [
+        ".next/cache/**"
+      ],
+      "logFile": "apps/api/.turbo/turbo-build.log",
+      "directory": "apps/api",
+      "dependencies": [
+        "eslint-config-custom#build",
+        "eslint-config-custom-server#build",
+        "jest-presets#build",
+        "logger#build",
+        "tsconfig#build"
+      ],
+      "dependents": [],
+      "resolvedTaskDefinition": {
+        "outputs": [
+          "!.next/cache/**",
+          ".next/**",
+          "api/**",
+          "build/**",
+          "dist/**",
+          "public/build/**"
+        ],
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "expandedOutputs": [],
+      "framework": "\u003cNO FRAMEWORK DETECTED\u003e",
+      "envMode": "loose",
+      "environmentVariables": {
+        "configured": [],
+        "inferred": [],
+        "global": [
+          "PORT=",
+          "VERCEL_ANALYTICS_ID="
+        ],
+        "passthrough": null,
+        "globalPassthrough": null
+      }
+    },
+    {
+      "taskId": "storefront#build",
+      "task": "build",
+      "package": "storefront",
+      "hash": "b40d9cd6e59d2d75",
+      "inputs": {
+        ".eslintrc.js": "c8df607506ccb33469c4a1bd896f561aa590cd0d",
+        "next-env.d.ts": "4f11a03dc6cc37f2b5105c08f2e7b24c603ab2f4",
+        "next.config.js": "da1bb770fb8e60c03768c4bf40bab8e4c45c08c5",
+        "package.json": "316a794cf9f2a01d3f4e74cbf89c3c45a8493611",
+        "public/favicon.ico": "af98450595e8b8efd9e505cddc5ed705b665a4d8",
+        "src/pages/_app.tsx": "7b312a712355863b5ddf50c74fed8a60539ca1fd",
+        "src/pages/index.tsx": "7adef55164671345a2645ef416b60b334029f74f",
+        "src/styles.css": "d4b766eb34f8db6771f1b325a485d560fdba456c",
+        "tsconfig.json": "fcbeaa748019a7a8fe54aba876e4ed871d455932"
+      },
+      "hashOfExternalDependencies": "168a62b32ee8a559",
+      "cache": {
+        "local": true,
+        "remote": true,
+        "status": "HIT",
+        "source": "LOCAL",
+        "timeSaved": 0
+      },
+      "command": "next build",
+      "cliArguments": [],
+      "outputs": [
+        ".next/**",
+        "api/**",
+        "build/**",
+        "dist/**",
+        "public/build/**"
+      ],
+      "excludedOutputs": [
+        ".next/cache/**"
+      ],
+      "logFile": "apps/storefront/.turbo/turbo-build.log",
+      "directory": "apps/storefront",
+      "dependencies": [
+        "eslint-config-custom#build",
+        "jest-presets#build",
+        "logger#build",
+        "tsconfig#build",
+        "ui#build"
+      ],
+      "dependents": [],
+      "resolvedTaskDefinition": {
+        "outputs": [
+          "!.next/cache/**",
+          ".next/**",
+          "api/**",
+          "build/**",
+          "dist/**",
+          "public/build/**"
+        ],
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [],
+        "outputMode": "full",
+        "env": [],
+        "persistent": false
+      },
+      "expandedOutputs": [],
+      "framework": "nextjs",
+      "envMode": "loose",
+      "environmentVariables": {
+        "configured": [],
+        "inferred": [],
+        "global": [
+          "PORT=",
+          "VERCEL_ANALYTICS_ID="
+        ],
+        "passthrough": null,
+        "globalPassthrough": null
+      }
+    }
+  ]
+}
